@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box on a Slope</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="./js/scaling.js"></script>
+</head>
+
+<body  class="disable-dbl-tap-zoom">
+    <div class="disable-dbl-tap-zoom" id="wrapper">
+    <div class="bg">
+        <div class="top-bar">
+            <img src="./images/Header.png" style="width: 100%; height: auto;" />
+            <h2 id="top-heading">Box on a Slope</h2>
+            <div class="top-buttons">
+                <!-- <div class="float-right"> -->
+                    <button  onclick="openIntroduction()" tabindex="0" id="into-btn">
+                        <img src="./images/intro_btn.png" class="image1-button"  onmouseenter="onHoverIntro()" 
+                        onmouseleave="offHoverIntro()"/>
+                    </button>
+                    <a id="MyLink" style="display:none"></a>
+                    <button onclick="OpenWord()" tabindex="0" id="exer-btn">
+                        <img src="./images/Exer_Btn.png" class="image2-button" onclick="OpenWord()" onmouseenter="onHoverExe()" 
+                        onmouseleave="offHoverExe()"/>
+                    </button>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div id="dialogIntro" class="intro-container hideThis">
+            <img src="./images/popup.png" >
+            <img class="intro-image" src="./images/S07-e83.png">
+            <button class="close" tabindex="0" onclick="showIntro('block', 'none')"></button>
+        </div>
+        <div class="left-part">
+            <div class="cal-value">
+                <div class="inclination">
+                   <span>inclination <i>&#952;</i></span> :<span class="incl-value">30.00 &#176;</span>
+                </div>
+                <div class="weight">
+                    <span>weight <i>W</i></span>:<span class="weight-value">20.00 N</span>
+                </div>
+                <div class="normal-reaction">
+                   <span> normal reaction <i>R</i></span>:<span class="nor-reac-value">17.32 N</span>
+                </div>
+                <div class="fraction">
+                    <span>friction <i>f</i></span>: <span class="fraction-value">8.66 N</span>
+                </div>
+                <div class="net-force">
+                    <span>net force <i>F</i></span>: <span class="force-value">1.34 N</span>
+                </div>
+            </div>
+            <div class="surface-container">
+                <div class="box-container">
+                    <img src="./images/Box-2.png" alt="slide box" srcset="" id="box">
+                    <div class="back-image">
+                        <img id="back1" src="./images/T2.png" >
+                        <img id="back2" src="./images/T2.png" >
+                        <img id="back3" src="./images/T2.png" >
+                        <img id="back4" src="./images/T2.png" >
+                        <img id="back5" src="./images/T2.png" >
+                        <img id="back6" src="./images/T2.png" >
+                        <img id="back7" src="./images/T2.png" >
+                        <img id="back8" src="./images/T2.png" >
+                        <img id="back9" src="./images/T2.png" >
+                        <img id="back10" src="./images/T2.png" >
+                        <img id="back11" src="./images/T2.png" >
+                        <img id="back12" src="./images/T2.png" >
+                        <img id="back13" src="./images/T2.png" >
+                    </div>
+                </div>
+                <div class="surface">
+                    <!-- <img src="./images/G1.png" alt="" srcset=""> -->
+                </div>
+                <div id="axis">
+                    <div id="arrow1" class="arrow1">
+                        <div class="line1"></div>
+                        <div class="point1"></div>
+                        <span>R</span>
+                    </div>
+                </div>
+                
+                <div id="frac-arrow-cont">
+                    <div id="frac-arrow" class="frac-arrow">
+                        <div class="frac-line"></div>
+                        <div class="frac-point"></div>
+                        <span>f</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <canvas id="axis" width="650" height="300"></canvas> -->
+            <div id="axis1">
+                <div id="arrow2" class="arrow2">
+                    <div class="line2"></div>
+                    <div class="point2"></div>
+                    <span>W</span>
+                </div>
+            </div>
+            <div id="axis2" style="display:none;">
+                <div id="arrow3" class="arrow3" >
+                    <div class="line3"></div>
+                    <div class="point3"></div>
+                    <span>F</span>
+
+                </div>
+            </div>
+            <div id="axis3">
+                <div id="arrow4" class="arrow4">
+                    <div id="line4" class="line4"></div>
+                                        <div id="point4" class="point4"></div>
+                                        <span>θ</span>
+
+
+                </div>
+                <div id="arcs"></div>
+
+            </div>
+            <div id="axis4">
+                <div id="arrow5" class="arrow5">
+                    <div id="line5" class="line5"></div>
+                </div>
+            </div>
+            <div id="axis5">
+                <div id="arrow6" class="arrow6">
+                    <div id="line6" class="line6"></div>
+                    <!-- <div id="point6" class="point6"></div> -->
+                  
+                </div>
+            </div>
+            <div id="axis6">
+                <div id="arrow7" class="arrow7">
+                    <div id="line7" class="line7"></div>
+                    <div id="point7" class="point7"></div>
+
+                </div>
+            </div>
+            
+            <div class="box-status">
+            </div>
+
+
+        </div>
+        <div class="right-part">
+            <!-- <div> -->
+                <p style="font-weight: bold; position: absolute;font-size: large;">inclination: <span style="word-spacing: 2px;margin-left: 10px;"id="inc-right-value">30&#176;</span></p>
+                <input type="range" min="0" max="60" step="5" value="30" class="slider" id="inc-slider" onchange="selectSlider()" oninput="selectInclination(event)">
+                <div class="inc-marking">
+                    <span>0</span>
+                    <span>30</span>
+                    <span>60</span>
+                </div>
+            <!-- </div> -->
+            <div class="mass">
+                <p style="font-weight: bold; position: absolute;font-size: large; top: 175px;">mass: <span id="mass-right-value" style="word-spacing: 2px;margin-left: 10px;">2 kg</span></p>
+                <input type="range" min="1" max="3" step="1" value="2" class="slider" id="mass-slider" style="top:200px" onchange="selectSlider()"  oninput="selectMass(event)">
+                <div class="mass-marking">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="suface-select">
+                <p>surface:</p>
+                <div class="radio-btn">
+                    <span class="rdo">
+                        <input tabindex="0" type="radio" name="wave" value="red" id="surf_1"  onclick="selectSurface(event)">frictionless
+                    </span>
+                    <span class="rdo">
+                        <input tabindex="0" type="radio" name="wave" value="red" id="surf_2" checked="true" onclick="selectSurface(event)">rough
+                    </span>
+                    <span class="rdo">
+                        <input tabindex="0" type="radio" name="wave" value="red" id="surf_3"  onclick="selectSurface(event)">very rough
+                    </span>
+                </div>
+            </div>
+            <div class="check-comp">
+                <!-- <div class="check"><input type="checkbox" id="showWeight" onclick="selectCheckBox(event)"><span>show components of weight</span></div>
+                <div class="check"><input type="checkbox" id="showForce" onclick="selectCheckBox(event)"><span>show net force</span></div> -->
+                <label class="container">
+                    <b>show components of weight</b>
+                    <input type="checkbox" class="refrence" id="showWeight" onclick="selectCheckBox(event)">
+                    <span class="checkmark" tabindex="0" role="checkbox" ></span>
+                  </label>
+
+                  <label class="container">
+                    <b>show net force</b>
+                    <input type="checkbox" class="refrence" id="showForce" onclick="selectCheckBox(event)">
+                    <span class="checkmark" tabindex="0" role="checkbox" ></span>
+                  </label>
+            </div>
+            <div class="control">
+                <div class="play" onclick="play()" tabindex="0" role="button" ></div>
+                <div class="reset" onclick="reset()" tabindex="0" role="button" ></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/index.js"></script>
+</body>
+
+</html>
