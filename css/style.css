@@ -416,7 +416,7 @@ input[type="checkbox"]:checked {
    margin-top: 27px;
     width: 124px;
     background: #0066cc;;
-    height: 2.5px;
+    height: 2px;
     margin-left: -134px;
 }
 
@@ -424,7 +424,7 @@ input[type="checkbox"]:checked {
   margin-top: 27px;
   width: 124px;
   background: #008000;;
-  height: 2.5px;
+  height: 2px;
   margin-left: -134px; 
 }
 
@@ -434,7 +434,7 @@ input[type="checkbox"]:checked {
   border-bottom: 6px solid transparent;
   border-left: 14px solid #0066cc;;
   float: right;
-  margin-top: -8px;
+  margin-top: -7px;
   margin-right: 104px;
 }
 .point2 {
@@ -442,7 +442,7 @@ input[type="checkbox"]:checked {
   border-bottom: 6px solid transparent;
   border-left: 14px solid #008000;;
   float: right;
-  margin-top: -8px;
+  margin-top: -7px;
   margin-right: 104px;
 }
 
@@ -503,7 +503,7 @@ font-style: italic;
   margin-top: 27px;
   width: 60px;
   background: #ff01ff;
-  height: 3px;
+  height: 2px;
   margin-left: -134px;
 }
 .frac-point{
@@ -511,7 +511,7 @@ font-style: italic;
   border-bottom: 6px solid transparent;
   border-left: 14px solid #ff01ff;
   float: right;
-  margin-top: -8px;
+  margin-top: -7px;
   margin-right: 170px;
 }
 .frac-arrow span{
@@ -608,7 +608,7 @@ b{
   margin-top: 9px;
   width: 3px;
   background: black;
-  height: 3px;
+  height: 2px;
   margin-left: -135px;
 }
 .point3{
