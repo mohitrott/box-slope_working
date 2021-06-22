@@ -104,7 +104,6 @@
     appearance: none;
     width: 27px;
     height: 32px;
-    
     border: 0;
     background: url('../images/S-btn.png');
     cursor: pointer;
@@ -132,16 +131,16 @@
   .slider{
     background: border-box;
     -webkit-appearance: none;
-    width: 30%;
-    height: 22px;
-    background-position: center;
+    width: 314px;
+    height: 20px;
+    background-position: 15px 4px;
     outline: none;
     background-image: url(../images/slider.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 91%;
     position: absolute;
     top: 106px;
-    right: 22px;
+    right: 17px;
   }
   .bg{
     background-image: url('../images/Bg.png');
@@ -289,16 +288,16 @@
     top: 124px;
     display: flex;
     justify-content: space-between;
-    width: 29.5%;
-    right: 22px;
+    width: 28.5%;
+    right: 24px;
   }
   .mass-marking{
     position: absolute;
     top: 219px;
     display: flex;
     justify-content: space-between;
-    width: 29%;
-    right: 27px;
+    width: 28.5%;
+    right: 26px;
   }
   .suface-select{
     position: absolute;
@@ -460,7 +459,7 @@ input[type="checkbox"]:checked {
   width: 108px;
   position: absolute;
   left: 53%;
-  z-index: 9;
+  z-index: 10;
   top: 305px;
   transform: rotate( 
 450deg
@@ -562,7 +561,7 @@ b{
   left: 0;
   height: 27px;
   width: 27px;
-  border: solid teal;
+  border: 2px solid #006666;
   background-color:white;
 }
 
@@ -576,15 +575,25 @@ b{
   display: block;
 }
 .container .checkmark:after {
-  left: -4px;
+  left: -3px;
   top: -8px;
-  width: 30px;
-  height: 31px;
+  width: 31.5px;
+  height: 31.5px;
   background-repeat: no-repeat;
   /* border: solid white; */
   background-image: url(../images/chk_1_t.png);
   background-size: 100%;
 
+}
+@supports (-moz-appearance:none) {
+  .container .checkmark:after{ 
+  left: -4px;
+  width: 32.5px;
+  height: 33.5px;
+   } 
+   .checkmark{
+    height: 28px;
+   }
 }
 .incl-value{
   margin-left: -10px;
@@ -801,6 +810,46 @@ display: flex;
 );
 }
 
+#inc-slider.focusAdd::-webkit-slider-thumb{
+  outline: none;
+  border: 4px solid yellow;
+  width: 35px;
+  height: 35px;
+  background: url('../images/S-btn_h.png');
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  border-radius: none;
+  /* padding:-2px; */
+}
+#inc-slider.focusRemove::-webkit-slider-thumb{
+  outline: none;
+  border: none;
+  width: 27px;
+  height: 32px;
+  background: url('../images/S-btn_h.png');
+  background-repeat: no-repeat;
+  border-radius: none;
+}
+
+#mass-slider.focusAdd::-webkit-slider-thumb{
+  outline: none;
+  border: 4px solid yellow;
+  width: 35px;
+  height: 35px;
+  background: url('../images/S-btn_h.png');
+  background-repeat: no-repeat;
+  margin-left: 2px;
+  border-radius: none;
+}
+#mass-slider.focusRemove::-webkit-slider-thumb{
+  outline: none;
+  border: none;
+  width: 27px;
+  height: 32px;
+  background: url('../images/S-btn_h.png');
+  background-repeat: no-repeat;
+  border-radius: none;
+}
 
 /* input[type=range]:focus::-webkit-slider-thumb {
   outline: none;
@@ -837,4 +886,12 @@ input[type=range]:focus::-moz-range-thumb {
 
 .inc-marking ,.mass-marking span{
   font-size: 12px;
+}
+.inc-marking span:first-child{
+  margin-left: -3px;
+  width: 12px;
+}
+.mass-marking span:last-child{
+  width: 8px;
+  margin-left: -5px;
 }
