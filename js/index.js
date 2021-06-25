@@ -519,7 +519,7 @@ function mass1() {
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".frac-line").style.display = "block";
     document.querySelector(".frac-point").style.display = "block";
-    document.querySelector(".frac-arrow span").style.display = "block";
+    // document.querySelector(".frac-arrow span").style.display = "block";
     document.querySelector(".line1").style.width = "65px";
     document.querySelector(".point1").style.marginRight = "165px";
     document.querySelector(".arrow1 span").style.left = "-48px";
@@ -1615,6 +1615,7 @@ function mass1() {
     }
     if (sufId == "surf_1") {
       document.querySelector(".arrow3").style.top = "411px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".line3").style.width = "56px";
       document.querySelector(".point3").style.marginRight = "173px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
@@ -1626,16 +1627,18 @@ function mass1() {
 
     if (sufId == "surf_2") {
       document.querySelector(".line3").style.width = "41px";
-      document.querySelector(".point3").style.marginRight = "196px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
+      document.querySelector(".point3").style.marginRight = "198px";
       document.querySelector(".arrow3").style.transform = "rotate(481deg)";
       document.querySelector(".arrow3").style.marginLeft = "13px";
-      document.querySelector(".arrow3").style.top = "410px";
+      document.querySelector(".arrow3").style.top = "411px";
       document.querySelector(".arrow3 span").style.transform = "rotate(250deg)";
       document.querySelector(".arrow3 span").style.left = "-79px";
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
       document.querySelector(".line3").style.width = "29px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "208px";
       document.querySelector(".arrow3").style.transform = "rotate(481deg)";
       document.querySelector(".arrow3").style.marginLeft = "15px";
@@ -1694,24 +1697,24 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "228px";
     document.querySelector(".frac-arrow span").style.left = "-114px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(5deg)";
-    document.querySelector(".arrow2").style.left = "332px";
+    document.querySelector(".arrow2").style.left = "331px";
     document.querySelector(".arrow2").style.top = "321px";
     document.querySelector(".arrow3").style.display = "none";
     document.getElementById("arcs").style.marginTop = "317px";
     document.getElementById("arcs").style.marginLeft = "-17px";
     document.getElementById("arcs").style.minWidth = "0.5px";
-    document.querySelector('.arrow4').style.left = '345px';
+    document.querySelector('.arrow4').style.left = '342px';
     document.querySelector('.arrow4').style.top = '498px';
     document.querySelector('.arrow4').style.marginLeft = '-46px';
     document.querySelector('.arrow4').style.width = '107px';
     document.querySelector('.line4').style.width = '127px';
-    document.querySelector('.point4').style.marginRight = '109px';
+    document.querySelector('.point4').style.marginRight = '106px';
     document.querySelector('.arrow4').style.transform = 'rotate(85deg)';
     document.querySelector('.line5').style.marginLeft = '-246px';
     document.querySelector('.line5').style.marginTop = '-4px';
     document.querySelector('.line5').style.width = '17px';
-    document.querySelector('.arrow5').style.top = '410px';
-    document.querySelector('.arrow5').style.transform = 'rotate(-18deg)';
+    document.querySelector('.arrow5').style.top = '418px';
+    document.querySelector('.arrow5').style.transform = 'rotate(-14deg)';
     document.querySelector('.line6').style.marginLeft = '-189px';
     document.querySelector('.line6').style.marginTop = '212px';
     document.querySelector('.line6').style.width = '138px';
@@ -1729,9 +1732,9 @@ function mass2() {
       if (ua.indexOf('chrome') > -1) {
         document.querySelector('.arrow7').style.top = '43.5%';
         document.querySelector('.arrow7').style.left = '54%';
-        document.querySelector('.line7').style.marginLeft = '-177px';
+        document.querySelector('.line7').style.marginLeft = '-185px';
         document.querySelector('.line7').style.width = '17px';
-        document.querySelector('.point7').style.marginRight = '193px';
+        document.querySelector('.point7').style.marginRight = '190px';
         document.querySelector('.arrow7').style.marginLeft = '53px';
       } else {
         document.querySelector('.arrow7').style.top = '46.5%';
@@ -1751,13 +1754,13 @@ function mass2() {
       else{
         document.querySelector(".arrow3").style.display = "none";
       } 
-      document.querySelector(".arrow3").style.top = "360px";
+      document.querySelector(".arrow3").style.top = "344px";
       document.querySelector(".line3").style.width = "1px";
       document.querySelector(".point3").style.marginRight = "229px";
       document.querySelector(".arrow3 span").style.transform = "rotate(188deg)";
       document.querySelector(".arrow3 span").style.left = "-112px";
-      document.querySelector(".arrow3").style.transform = "rotate(524deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-71px";
+      document.querySelector(".arrow3").style.transform = "rotate(531deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-74px";
     }
 
   }
@@ -1771,8 +1774,8 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "218px";
     document.querySelector(".frac-arrow span").style.left = "-106px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(10deg)";
-    document.querySelector(".arrow2").style.left = "335px";
-    document.querySelector(".arrow2").style.top = "321px";
+    document.querySelector(".arrow2").style.left = "334px";
+    document.querySelector(".arrow2").style.top = "320px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-10deg)";
     document.querySelector(".arrow4 span").style.left = "-88px";
@@ -1781,23 +1784,23 @@ function mass2() {
     document.getElementById("arcs").style.minWidth = "1.5px";
     document.querySelector('.arrow4').style.left = '345px';
     document.querySelector('.arrow4').style.top = '494px';
-    document.querySelector('.arrow4').style.marginLeft = '-23px';
+    document.querySelector('.arrow4').style.marginLeft = '-27px';
     document.querySelector('.arrow4').style.width = '107px';
     document.querySelector('.line4').style.width = '114px';
     document.querySelector('.point4').style.marginRight = '112px';
     document.querySelector('.arrow4').style.transform = 'rotate(79deg)';
-    document.querySelector('.line5').style.marginLeft = '-234px';
+    document.querySelector('.line5').style.marginLeft = '-238px';
     document.querySelector('.line5').style.marginTop = '-4px';
     document.querySelector('.line5').style.width = '27px';
     document.querySelector('.arrow5').style.top = '400px';
     document.getElementById("arcs").style.marginTop = "315px";
     document.getElementById("arcs").style.marginLeft = "-11px";
     document.querySelector('.arrow5').style.transform = 'rotate(-22deg)';
-    document.querySelector('.line6').style.marginLeft = '-185px';
+    document.querySelector('.line6').style.marginLeft = '-187px';
     document.querySelector('.line6').style.marginTop = '188px';
     document.querySelector('.line6').style.width = '133px';
     document.querySelector('.arrow6').style.transform = 'rotate(77deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-16deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-12deg)';
     document.querySelector('.arrow7').style.top = '271px';
     document.querySelector('.arrow7').style.left = '53%';
     document.querySelector('.line7').style.marginLeft = '-174px';
@@ -1806,11 +1809,11 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '271px';
+        document.querySelector('.arrow7').style.top = '281px';
         document.querySelector('.arrow7').style.left = '53%';
-        document.querySelector('.line7').style.marginLeft = '-174px';
+        document.querySelector('.line7').style.marginLeft = '-176px';
         document.querySelector('.line7').style.width = '28px';
-        document.querySelector('.point7').style.marginRight = '198px';
+        document.querySelector('.point7').style.marginRight = '194px';
       } else {
         document.querySelector('.arrow7').style.top = '304px';
         document.querySelector('.arrow7').style.left = '37%';
@@ -1828,13 +1831,13 @@ function mass2() {
       else{
         document.querySelector(".arrow3").style.display = "none";
       } 
-      document.querySelector(".arrow3").style.top = "357px";
+      document.querySelector(".arrow3").style.top = "352px";
       document.querySelector(".line3").style.width = "24px";
-      document.querySelector(".point3").style.marginRight = "207px";
+      document.querySelector(".point3").style.marginRight = "211px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-94px";
-      document.querySelector(".arrow3").style.transform = "rotate(524deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-60px";
+      document.querySelector(".arrow3").style.transform = "rotate(526deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-65px";
     }
 
   }
@@ -1859,22 +1862,22 @@ function mass2() {
     document.getElementById("arcs").style.marginLeft = "-11px";
     document.getElementById("arcs").style.minWidth = "1.5em";
     document.querySelector('.arrow4').style.left = '345px';
-    document.querySelector('.arrow4').style.top = '479px';
-    document.querySelector('.arrow4').style.marginLeft = '2px';
+    document.querySelector('.arrow4').style.top = '483px';
+    document.querySelector('.arrow4').style.marginLeft = '-7px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '123px';
     document.querySelector('.point4').style.marginRight = '99px';
-    document.querySelector('.arrow4').style.transform = 'rotate(73deg)';
-    document.querySelector('.line5').style.marginLeft = '-216px';
+    document.querySelector('.arrow4').style.transform = 'rotate(75deg)';
+    document.querySelector('.line5').style.marginLeft = '-221px';
     document.querySelector('.line5').style.marginTop = '-4px';
-    document.querySelector('.line5').style.width = '42px';
+    document.querySelector('.line5').style.width = '37px';
     document.querySelector('.arrow5').style.top = '400px';
     document.querySelector('.arrow5').style.transform = 'rotate(-22deg)';
-    document.querySelector('.line6').style.marginLeft = '-176px';
-    document.querySelector('.line6').style.marginTop = '166px';
-    document.querySelector('.line6').style.width = '128px';
-    document.querySelector('.arrow6').style.transform = 'rotate(72deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-22deg)';
+    document.querySelector('.line6').style.marginLeft = '-185px';
+    document.querySelector('.line6').style.marginTop = '175px';
+    document.querySelector('.line6').style.width = '138px';
+    document.querySelector('.arrow6').style.transform = 'rotate(75deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-17deg)';
     document.querySelector('.arrow7').style.top = '257px';
     document.querySelector('.line7').style.marginLeft = '-187px';
     document.querySelector('.line7').style.width = '33px';
@@ -1883,10 +1886,11 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '257px';
+        document.querySelector('.arrow7').style.top = '266px';
         document.querySelector('.line7').style.marginLeft = '-187px';
         document.querySelector('.line7').style.width = '33px';
-        document.querySelector('.point7').style.marginRight = '213px';
+        document.querySelector('.point7').style.marginRight = '202px';
+        document.querySelector('.arrow7').style.marginLeft = '55px';
       } else {
         // Safari
         document.querySelector('.arrow7').style.top = '308px';
@@ -1907,13 +1911,13 @@ function mass2() {
       else{
         document.querySelector(".arrow3").style.display = "none";
       } 
-      document.querySelector(".arrow3").style.top = "369px";
-      document.querySelector(".line3").style.width = "41px";
-      document.querySelector(".point3").style.marginRight = "192px";
+      document.querySelector(".arrow3").style.top = "360px";
+      document.querySelector(".line3").style.width = "30px";
+      document.querySelector(".point3").style.marginRight = "204px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
-      document.querySelector(".arrow3 span").style.left = "-63px";
-      document.querySelector(".arrow3").style.transform = "rotate(517deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-50px";
+      document.querySelector(".arrow3 span").style.left = "-85px";
+      document.querySelector(".arrow3").style.transform = "rotate(521deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-58px";
     }
 
   }
@@ -1937,33 +1941,34 @@ function mass2() {
     document.querySelector(".arrow4 span").style.left = "-88px";
     document.querySelector(".arrow4 span").style.top = "28px";
     document.querySelector('.arrow4').style.left = '345px';
-    document.querySelector('.arrow4').style.top = '469px';
-    document.querySelector('.arrow4').style.marginLeft = '19px';
+    document.querySelector('.arrow4').style.top = '477px';
+    document.querySelector('.arrow4').style.marginLeft = '11px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '118px';
     document.querySelector('.point4').style.marginRight = '108px';
-    document.querySelector('.arrow4').style.transform = 'rotate(68deg)';
-    document.querySelector('.line5').style.marginLeft = '-217px';
+    document.querySelector('.arrow4').style.transform = 'rotate(70deg)';
+    document.querySelector('.line5').style.marginLeft = '-211px';
     document.querySelector('.line5').style.marginTop = '-4px';
     document.querySelector('.line5').style.width = '50px';
-    document.querySelector('.arrow5').style.top = '377px';
-    document.querySelector('.arrow5').style.transform = 'rotate(-30deg)';
-    document.querySelector('.line6').style.marginLeft = '-173px';
-    document.querySelector('.line6').style.marginTop = '146px';
-    document.querySelector('.line6').style.width = '122px';
-    document.querySelector('.arrow6').style.transform = 'rotate(66deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-27deg)';
+    document.querySelector('.arrow5').style.top = '392px';
+    document.querySelector('.arrow5').style.transform = 'rotate(-24deg)';
+    document.querySelector('.line6').style.marginLeft = '-179px';
+    document.querySelector('.line6').style.marginTop = '156px';
+    document.querySelector('.line6').style.width = '128px';
+    document.querySelector('.arrow6').style.transform = 'rotate(70deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-21deg)';
     document.querySelector('.arrow7').style.top = '244px';
     document.querySelector('.line7').style.marginLeft = '-201px';
     document.querySelector('.line7').style.width = '53px';
-    document.querySelector('.point7').style.marginRight = '229px';
+    document.querySelector('.point7').style.marginRight = '214px';
 
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '244px';
+        document.querySelector('.arrow7').style.top = '256px';
         document.querySelector('.line7').style.marginLeft = '-201px';
-        document.querySelector('.line7').style.width = '53px';
+        document.querySelector('.line7').style.width = '45px';
+        document.querySelector('.arrow7').style.marginLeft = '55px';
       } else {
         // Safari
         document.querySelector('.arrow7').style.top = '306px';
@@ -1980,13 +1985,13 @@ function mass2() {
       else{
         document.querySelector(".arrow3").style.display = "none";
       } 
-      document.querySelector(".arrow3").style.top = "381px";
-      document.querySelector(".line3").style.width = "63px";
-      document.querySelector(".point3").style.marginRight = "178px";
+      document.querySelector(".arrow3").style.top = "367px";
+      document.querySelector(".line3").style.width = "40px";
+      document.querySelector(".point3").style.marginRight = "196px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
-      document.querySelector(".arrow3 span").style.left = "-63px";
-      document.querySelector(".arrow3").style.transform = "rotate(510deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-40px";
+      document.querySelector(".arrow3 span").style.left = "-72px";
+      document.querySelector(".arrow3").style.transform = "rotate(517deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-54px";
     }
 
   }
@@ -2000,7 +2005,7 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "188px";
     document.querySelector(".frac-arrow span").style.left = "-78px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(25deg)";
-    document.querySelector(".arrow2").style.left = "343px";
+    document.querySelector(".arrow2").style.left = "342px";
     document.querySelector(".arrow2").style.top = "313px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-25deg)";
@@ -2009,22 +2014,22 @@ function mass2() {
     document.getElementById("arcs").style.marginTop = "301px";
     document.getElementById("arcs").style.marginLeft = "-4px";
     document.querySelector('.arrow4').style.left = '345px';
-    document.querySelector('.arrow4').style.top = '461px';
-    document.querySelector('.arrow4').style.marginLeft = '31px';
+    document.querySelector('.arrow4').style.top = '464px';
+    document.querySelector('.arrow4').style.marginLeft = '27px';
     document.querySelector('.arrow4').style.width = '96px';
-    document.querySelector('.line4').style.width = '116px';
-    document.querySelector('.point4').style.marginRight = '115px';
-    document.querySelector('.arrow4').style.transform = 'rotate(64deg)';
-    document.querySelector('.line5').style.marginLeft = '-213px';
+    document.querySelector('.line4').style.width = '119px';
+    document.querySelector('.point4').style.marginRight = '107px';
+    document.querySelector('.arrow4').style.transform = 'rotate(65deg)';
+    document.querySelector('.line5').style.marginLeft = '-200px';
     document.querySelector('.line5').style.marginTop = '-4px';
     document.querySelector('.line5').style.width = '58px';
-    document.querySelector('.arrow5').style.top = '366px';
-    document.querySelector('.arrow5').style.transform = 'rotate(-33deg)';
+    document.querySelector('.arrow5').style.top = '381px';
+    document.querySelector('.arrow5').style.transform = 'rotate(-28deg)';
     document.querySelector('.line6').style.marginLeft = '-173px';
-    document.querySelector('.line6').style.marginTop = '136px';
-    document.querySelector('.line6').style.width = '122px';
-    document.querySelector('.arrow6').style.transform = 'rotate(64deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-27deg)';
+    document.querySelector('.line6').style.marginTop = '138px';
+    document.querySelector('.line6').style.width = '125px';
+    document.querySelector('.arrow6').style.transform = 'rotate(65deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-28deg)';
     document.querySelector('.arrow7').style.top = '242px';
     document.querySelector('.arrow7').style.left = '53%';
     document.querySelector('.line7').style.marginLeft = '-201px';
@@ -2034,8 +2039,8 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '242px';
-        document.querySelector('.line7').style.marginLeft = '-201px';
+        document.querySelector('.arrow7').style.top = '238px';
+        document.querySelector('.line7').style.marginLeft = '-214px';
         document.querySelector('.line7').style.width = '53px';
         document.querySelector('.point7').style.marginRight = '229px';
         document.querySelector('.arrow7').style.left = '53%';
@@ -2059,13 +2064,13 @@ function mass2() {
       else{
         document.querySelector(".arrow3").style.display = "none";
       } 
-      document.querySelector(".arrow3").style.top = "379px";
-      document.querySelector(".line3").style.width = "63px";
-      document.querySelector(".point3").style.marginRight = "178px";
+      document.querySelector(".arrow3").style.top = "377px";
+      document.querySelector(".line3").style.width = "50px";
+      document.querySelector(".point3").style.marginRight = "183px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-63px";
-      document.querySelector(".arrow3").style.transform = "rotate(510deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-40px";
+      document.querySelector(".arrow3").style.transform = "rotate(512deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-46px";
     }
 
   }
@@ -2084,19 +2089,19 @@ function mass2() {
     document.querySelector(".surface-container").style.transform =
       "rotate(-30deg)";
     document.querySelector('.arrow4').style.left = '345px';
-    document.querySelector('.arrow4').style.top = '453px';
+    document.querySelector('.arrow4').style.top = '451px';
     document.querySelector(".arrow4 span").style.left = "-88px";
-    document.querySelector('.arrow4').style.marginLeft = '46px';
+    document.querySelector('.arrow4').style.marginLeft = '41px';
     document.querySelector('.arrow4').style.width = '96px';
-    document.querySelector('.line4').style.width = '116px';
-    document.querySelector('.point4').style.marginRight = '115px';
+    document.querySelector('.line4').style.width = '120px';
+    document.querySelector('.point4').style.marginRight = '107px';
     document.querySelector('.arrow4').style.transform = 'rotate(60deg)';
     document.getElementById("arcs").style.marginTop = "295px";
     document.getElementById("arcs").style.marginLeft = "-1px";
     document.querySelector('.line5').style.marginLeft = '-193px';
     document.querySelector('.line5').style.marginTop = '-4px';
-    document.querySelector('.line5').style.width = '70px';
-    document.querySelector('.arrow5').style.top = '371px';
+    document.querySelector('.line5').style.width = '66px';
+    document.querySelector('.arrow5').style.top = '370px';
     document.querySelector('.arrow5').style.transform = 'rotate(-33deg)';
     document.querySelector('.line6').style.marginLeft = '-165px';
     document.querySelector('.line6').style.marginTop = '116px';
@@ -2180,44 +2185,44 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "175px";
     document.querySelector(".frac-arrow span").style.left = "-55px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(35deg)";
-    document.querySelector(".arrow2").style.left = "347px";
-    document.querySelector(".arrow2").style.top = "305px";
+    document.querySelector(".arrow2").style.left = "346px";
+    document.querySelector(".arrow2").style.top = "308px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-35deg)";
     document.querySelector('.arrow4').style.left = '345px';
     document.querySelector(".arrow4 span").style.left = "-97px";
     document.getElementById("arcs").style.marginTop = "291px";
     document.getElementById("arcs").style.marginLeft = "1px";
-    document.querySelector('.arrow4').style.top = '450px';
-    document.querySelector('.arrow4').style.marginLeft = '48px';
+    document.querySelector('.arrow4').style.top = '444px';
+    document.querySelector('.arrow4').style.marginLeft = '55px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '116px';
     document.querySelector('.point4').style.marginRight = '115px';
-    document.querySelector('.arrow4').style.transform = 'rotate(60deg)';
+    document.querySelector('.arrow4').style.transform = 'rotate(56deg)';
     document.querySelector('.line5').style.marginLeft = '-188px';
     document.querySelector('.line5').style.marginTop = '-4px';
     document.querySelector('.line5').style.width = '71px';
     document.querySelector('.arrow5').style.top = '366px';
     document.querySelector('.arrow5').style.transform = 'rotate(-33deg)';
-    document.querySelector('.line6').style.marginLeft = '-168px';
-    document.querySelector('.line6').style.marginTop = '116px';
+    document.querySelector('.line6').style.marginLeft = '-161px';
+    document.querySelector('.line6').style.marginTop = '108px';
     document.querySelector('.line6').style.width = '122px';
-    document.querySelector('.arrow6').style.transform = 'rotate(60deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-32deg)';
+    document.querySelector('.arrow6').style.transform = 'rotate(56deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-33deg)';
     document.querySelector('.arrow7').style.top = '224px';
     document.querySelector('.arrow7').style.left = '53%';
     document.querySelector('.line7').style.marginLeft = '-225px';
     document.querySelector('.line7').style.width = '58px';
-    document.querySelector('.point7').style.marginRight = '240px';
+    document.querySelector('.point7').style.marginRight = '250px';
 
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '224px';
-        document.querySelector('.line7').style.marginLeft = '-225px';
-        document.querySelector('.line7').style.width = '58px';
+        document.querySelector('.arrow7').style.top = '223px';
+        document.querySelector('.line7').style.marginLeft = '-241px';
+        document.querySelector('.line7').style.width = '72px';
         document.querySelector('.arrow7').style.left = '53%';
-        document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector('.arrow7').style.marginLeft = '54px';
       } else {
         // Safari
         document.querySelector('.arrow7').style.top = '302px';
@@ -2236,20 +2241,20 @@ function mass2() {
     }
 
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "381px";
+      document.querySelector(".arrow3").style.top = "383px";
       document.querySelector(".arrow3").style.left = "40.2%";
-      document.querySelector(".line3").style.width = "73px";
-      document.querySelector(".point3").style.marginRight = "169px";
+      document.querySelector(".line3").style.width = "75px";
+      document.querySelector(".point3").style.marginRight = "165px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-50px";
       document.querySelector(".arrow3").style.transform = "rotate(506deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-32px";
+      document.querySelector(".arrow3").style.marginLeft = "-33px";
     }
 
     if (sufId == "surf_2") {
       document.querySelector(".arrow3").style.top = "383px";
       document.querySelector(".arrow3").style.transform = "rotate(507deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-38px";
+      document.querySelector(".arrow3").style.marginLeft = "-36px";
       document.querySelector(".line3").style.width = "17px";
       document.querySelector(".point3").style.marginRight = "213px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
@@ -2274,8 +2279,8 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "180px";
     document.querySelector(".frac-arrow span").style.left = "-60px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(40deg)";
-    document.querySelector(".arrow2").style.left = "349px";
-    document.querySelector(".arrow2").style.top = "304px";
+    document.querySelector(".arrow2").style.left = "348px";
+    document.querySelector(".arrow2").style.top = "306px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-40deg)";
     document.getElementById("arcs").style.marginTop = "287px";
@@ -2283,11 +2288,11 @@ function mass2() {
     document.querySelector('.arrow4').style.left = '357px';
     document.querySelector('.arrow4').style.top = '430px';
     document.querySelector(".arrow4 span").style.left = "-97px";
-    document.querySelector('.arrow4').style.marginLeft = '53px';
+    document.querySelector('.arrow4').style.marginLeft = '57px';
     document.querySelector('.arrow4').style.width = '96px';
-    document.querySelector('.line4').style.width = '116px';
-    document.querySelector('.point4').style.marginRight = '115px';
-    document.querySelector('.arrow4').style.transform = 'rotate(53deg)';
+    document.querySelector('.line4').style.width = '102px';
+    document.querySelector('.point4').style.marginRight = '121px';
+    document.querySelector('.arrow4').style.transform = 'rotate(51deg)';
     document.querySelector('.line5').style.marginLeft = '-197px';
     document.querySelector('.line5').style.marginTop = '18px';
     document.querySelector('.line5').style.width = '82px';
@@ -2306,11 +2311,11 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '207px';
+        document.querySelector('.arrow7').style.top = '208px';
         document.querySelector('.line7').style.marginLeft = '-248px';
         document.querySelector('.line7').style.width = '73px';
         document.querySelector('.point7').style.marginRight = '256px';
-        document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector('.arrow7').style.marginLeft = '50px';
       } else {
         // Safari
         document.querySelector('.arrow7').style.top = '306px';
@@ -2329,13 +2334,13 @@ function mass2() {
     }
 
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "387px";
+      document.querySelector(".arrow3").style.top = "388px";
       document.querySelector(".arrow3").style.left = "40.2%";
-      document.querySelector(".line3").style.width = "73px";
-      document.querySelector(".point3").style.marginRight = "166px";
+      document.querySelector(".line3").style.width = "75px";
+      document.querySelector(".point3").style.marginRight = "163px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-50px";
-      document.querySelector(".arrow3").style.transform = "rotate(504deg)";
+      document.querySelector(".arrow3").style.transform = "rotate(502deg)";
       document.querySelector(".arrow3").style.marginLeft = "-27px";
     }
 
@@ -2344,7 +2349,7 @@ function mass2() {
       document.querySelector(".line3").style.width = "25px";
       document.querySelector(".point3").style.marginRight = "205px";
       document.querySelector(".arrow3").style.transform = "rotate(502deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-25px";
+      document.querySelector(".arrow3").style.marginLeft = "-28px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-91px";
       document.querySelector(".arrow3").style.left = "40.2%";
@@ -2359,9 +2364,9 @@ function mass2() {
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-116px";
       document.querySelector(".arrow3").style.left = "41.2%";
-      document.querySelector(".arrow3").style.top = "382px";
+      document.querySelector(".arrow3").style.top = "381px";
       document.querySelector(".arrow3").style.transform = "rotate(507deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-38px";
+      document.querySelector(".arrow3").style.marginLeft = "-42px";
     }
 
   }
@@ -2375,7 +2380,7 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "185px";
     document.querySelector(".frac-arrow span").style.left = "-65px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(45deg)";
-    document.querySelector(".arrow2").style.left = "353px";
+    document.querySelector(".arrow2").style.left = "350px";
     document.querySelector(".arrow2").style.top = "304px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-45deg)";
@@ -2389,7 +2394,7 @@ function mass2() {
     document.querySelector('.arrow4').style.width = '95px';
     document.querySelector('.line4').style.width = '83px';
     document.querySelector('.point4').style.marginRight = '135px';
-    document.querySelector('.arrow4').style.transform = 'rotate(46deg)';
+    document.querySelector('.arrow4').style.transform = 'rotate(45deg)';
     document.querySelector('.line5').style.marginLeft = '-214px';
     document.querySelector('.line5').style.marginTop = '18px';
     document.querySelector('.line5').style.width = '95px';
@@ -2399,7 +2404,7 @@ function mass2() {
     document.querySelector('.line6').style.marginTop = '74px';
     document.querySelector('.line6').style.width = '101px';
     document.querySelector('.arrow6').style.transform = 'rotate(45deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-43deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-45deg)';
     document.querySelector('.arrow7').style.top = '191px';
     document.querySelector('.line7').style.marginLeft = '-282px';
     document.querySelector('.line7').style.width = '85px';
@@ -2409,11 +2414,11 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '191px';
+        document.querySelector('.arrow7').style.top = '185px';
         document.querySelector('.line7').style.marginLeft = '-282px';
         document.querySelector('.line7').style.width = '85px';
         document.querySelector('.point7').style.marginRight = '282px';
-        document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector('.arrow7').style.marginLeft = '48px';
         document.querySelector('.arrow7').style.left = '53%';
 
       } else {
@@ -2436,21 +2441,21 @@ function mass2() {
     }
 
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "397px";
+      document.querySelector(".arrow3").style.top = "396px";
       document.querySelector(".arrow3").style.left = "40.2%";
       document.querySelector(".line3").style.width = "83px";
       document.querySelector(".point3").style.marginRight = "149px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-33px";
-      document.querySelector(".arrow3").style.transform = "rotate(498deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-17px";
+      document.querySelector(".arrow3").style.transform = "rotate(496deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-15px";
     }
 
     if (sufId == "surf_2") {
       document.querySelector(".line3").style.width = "33px";
       document.querySelector(".point3").style.marginRight = "197px";
-      document.querySelector(".arrow3").style.transform = "rotate(498deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-19px";
+      document.querySelector(".arrow3").style.transform = "rotate(496deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-17px";
       document.querySelector(".arrow3").style.top = "398px";
       document.querySelector(".arrow3 span").style.transform = "rotate(230deg)";
       document.querySelector(".arrow3 span").style.left = "-83px";
@@ -2461,8 +2466,8 @@ function mass2() {
       document.querySelector(".line3").style.width = "18px";
       document.querySelector(".point3").style.marginRight = "219px";
       document.querySelector(".arrow3").style.transform = "rotate(493deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-13px";
-      document.querySelector(".arrow3").style.top = "406px";
+      document.querySelector(".arrow3").style.marginLeft = "-11px";
+      document.querySelector(".arrow3").style.top = "401px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-110px";
     }
@@ -2478,8 +2483,8 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "190px";
     document.querySelector(".frac-arrow span").style.left = "-70px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(50deg)";
-    document.querySelector(".arrow2").style.left = "353px";
-    document.querySelector(".arrow2").style.top = "300px";
+    document.querySelector(".arrow2").style.left = "352px";
+    document.querySelector(".arrow2").style.top = "301px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-50deg)";
     document.getElementById("arcs").style.marginTop = "278px";
@@ -2487,22 +2492,22 @@ function mass2() {
     document.querySelector(".arrow4 span").style.left = "-112px";
     document.querySelector(".arrow4 span").style.transform = "rotate(318deg)";
     document.querySelector('.arrow4').style.left = '328px';
-    document.querySelector('.arrow4').style.top = '395px';
-    document.querySelector('.arrow4').style.marginLeft = '116px';
+    document.querySelector('.arrow4').style.top = '397px';
+    document.querySelector('.arrow4').style.marginLeft = '113px';
     document.querySelector('.arrow4').style.width = '88px';
     document.querySelector('.line4').style.width = '83px';
     document.querySelector('.point4').style.marginRight = '135px';
     document.querySelector('.arrow4').style.transform = 'rotate(40deg)';
-    document.querySelector('.line5').style.marginLeft = '-237px';
-    document.querySelector('.line5').style.marginTop = '18px';
-    document.querySelector('.line5').style.width = '108px';
+    document.querySelector('.line5').style.marginLeft = '-240px';
+    document.querySelector('.line5').style.marginTop = '17px';
+    document.querySelector('.line5').style.width = '105px';
     document.querySelector('.arrow5').style.top = '294px';
     document.querySelector('.arrow5').style.transform = 'rotate(-52deg)';
-    document.querySelector('.line6').style.marginLeft = '-140px';
+    document.querySelector('.line6').style.marginLeft = '-136px';
     document.querySelector('.line6').style.marginTop = '64px';
-    document.querySelector('.line6').style.width = '95px';
+    document.querySelector('.line6').style.width = '92px';
     document.querySelector('.arrow6').style.transform = 'rotate(41deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-48deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-50deg)';
     document.querySelector('.arrow7').style.top = '164px';
     document.querySelector('.line7').style.marginLeft = '-315px';
     document.querySelector('.line7').style.width = '96px';
@@ -2511,11 +2516,11 @@ function mass2() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
-        document.querySelector('.arrow7').style.top = '164px';
-        document.querySelector('.line7').style.marginLeft = '-315px';
+        document.querySelector('.arrow7').style.top = '161px';
+        document.querySelector('.line7').style.marginLeft = '-326px';
         document.querySelector('.line7').style.width = '96px';
         document.querySelector('.point7').style.marginRight = '307px';
-        document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector('.arrow7').style.marginLeft = '50px';
         document.querySelector('.arrow7').style.left = '53%';
       } else {
         // Safari
@@ -2536,22 +2541,23 @@ function mass2() {
     }
 
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "396px";
+      document.querySelector(".arrow3").style.top = "402px";
       document.querySelector(".line3").style.width = "101px";
-      document.querySelector(".point3").style.marginRight = "137px";
+      document.querySelector(".line3").style.marginLeft = "-134px";
+      document.querySelector(".point3").style.marginRight = "139px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-24px";
-      document.querySelector(".arrow3").style.transform = "rotate(492deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-7px";
+      document.querySelector(".arrow3").style.transform = "rotate(490deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-4px";
       document.querySelector(".arrow3").style.left = "40.2%";
     }
 
     if (sufId == "surf_2") {
       document.querySelector(".line3").style.width = "63px";
       document.querySelector(".point3").style.marginRight = "168px";
-      document.querySelector(".arrow3").style.transform = "rotate(492deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-11px";
-      document.querySelector(".arrow3").style.top = "400px";
+      document.querySelector(".arrow3").style.transform = "rotate(490deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-4px";
+      document.querySelector(".arrow3").style.top = "402px";
       document.querySelector(".arrow3 span").style.transform = "rotate(230deg)";
       document.querySelector(".arrow3 span").style.left = "-53px";
       document.querySelector(".arrow3").style.left = "40.2%";
@@ -2559,8 +2565,8 @@ function mass2() {
     if (sufId == "surf_3") {
       document.querySelector(".line3").style.width = "29px";
       document.querySelector(".point3").style.marginRight = "208px";
-      document.querySelector(".arrow3").style.transform = "rotate(493deg)";
-      document.querySelector(".arrow3").style.marginLeft = "1px";
+      document.querySelector(".arrow3").style.transform = "rotate(490deg)";
+      document.querySelector(".arrow3").style.marginLeft = "9px";
       document.querySelector(".arrow3").style.top = "402px";
       document.querySelector(".arrow3").style.left = "38.2%";
       document.querySelector(".arrow3").style.top = "399px";
@@ -2579,8 +2585,8 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "195px";
     document.querySelector(".frac-arrow span").style.left = "-80px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(55deg)";
-    document.querySelector(".arrow2").style.left = "355px";
-    document.querySelector(".arrow2").style.top = "297px";
+    document.querySelector(".arrow2").style.left = "353px";
+    document.querySelector(".arrow2").style.top = "298px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-55deg)";
     document.querySelector(".arrow4 span").style.left = "-112px";
@@ -2588,17 +2594,17 @@ function mass2() {
     document.getElementById("arcs").style.marginTop = "274px";
     document.getElementById("arcs").style.marginLeft = "9px";
     document.querySelector('.arrow4').style.left = '331px';
-    document.querySelector('.arrow4').style.top = '378px';
+    document.querySelector('.arrow4').style.top = '384px';
     document.querySelector('.arrow4').style.marginLeft = '121px';
     document.querySelector('.arrow4').style.width = '95px';
     document.querySelector('.line4').style.width = '65px';
     document.querySelector('.point4').style.marginRight = '151px';
     document.querySelector('.arrow4').style.transform = 'rotate(35deg)';
-    document.querySelector('.line5').style.marginLeft = '-277px';
+    document.querySelector('.line5').style.marginLeft = '-274px';
     document.querySelector('.line5').style.marginTop = '0px';
-    document.querySelector('.line5').style.width = '108px';
-    document.querySelector('.arrow5').style.top = '258px';
-    document.querySelector('.arrow5').style.transform = 'rotate(-58deg)';
+    document.querySelector('.line5').style.width = '110px';
+    document.querySelector('.arrow5').style.top = '268px';
+    document.querySelector('.arrow5').style.transform = 'rotate(-57deg)';
     document.querySelector('.line6').style.marginLeft = '-122px';
     document.querySelector('.line6').style.marginTop = '46px';
     document.querySelector('.line6').style.width = '77px';
@@ -2639,17 +2645,17 @@ function mass2() {
       document.querySelector(".point3").style.marginRight = "137px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-19px";
-      document.querySelector(".arrow3").style.transform = "rotate(487deg)";
-      document.querySelector(".arrow3").style.marginLeft = "4px";
+      document.querySelector(".arrow3").style.transform = "rotate(485deg)";
+      document.querySelector(".arrow3").style.marginLeft = "7px";
       document.querySelector(".arrow3").style.left = "40.2%";
     }
 
     if (sufId == "surf_2") {
       document.querySelector(".line3").style.width = "63px";
       document.querySelector(".point3").style.marginRight = "169px";
-      document.querySelector(".arrow3").style.transform = "rotate(487deg)";
-      document.querySelector(".arrow3").style.marginLeft = "4px";
-      document.querySelector(".arrow3").style.top = "407px";
+      document.querySelector(".arrow3").style.transform = "rotate(485deg)";
+      document.querySelector(".arrow3").style.marginLeft = "7px";
+      document.querySelector(".arrow3").style.top = "409px";
       document.querySelector(".arrow3 span").style.transform = "rotate(230deg)";
       document.querySelector(".arrow3 span").style.left = "-41px";
       document.querySelector(".arrow3").style.left = "40.2%";
@@ -2659,10 +2665,10 @@ function mass2() {
       document.querySelector(".line3").style.width = "33px";
       document.querySelector(".point3").style.marginRight = "203px";
       document.querySelector(".line3").style.marginLeft = "-141px";
-      document.querySelector(".arrow3").style.transform = "rotate(488deg)";
+      document.querySelector(".arrow3").style.transform = "rotate(486deg)";
       document.querySelector(".arrow3").style.left = "43.2%";
-      document.querySelector(".arrow3").style.top = "407px";
-      document.querySelector(".arrow3").style.marginLeft = "-18px";
+      document.querySelector(".arrow3").style.top = "412px";
+      document.querySelector(".arrow3").style.marginLeft = "-17px";
       document.querySelector(".arrow3 span").style.transform = "rotate(230deg)";
       document.querySelector(".arrow3 span").style.left = "-83px";
     }
@@ -2678,8 +2684,8 @@ function mass2() {
     document.querySelector(".frac-point").style.marginRight = "200px";
     document.querySelector(".frac-arrow span").style.left = "-85px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(60deg)";
-    document.querySelector(".arrow2").style.left = "355px";
-    document.querySelector(".arrow2").style.top = "293px";
+    document.querySelector(".arrow2").style.left = "354px";
+    document.querySelector(".arrow2").style.top = "295px";
     document.querySelector(".surface-container").style.transform =
       "rotate(-60deg)";
     document.getElementById("arcs").style.marginTop = "269px";
@@ -2687,12 +2693,12 @@ function mass2() {
     document.querySelector(".arrow4 span").style.left = "-121px";
     document.querySelector(".arrow4 span").style.transform = "rotate(318deg)";
     document.querySelector('.arrow4').style.left = '342px';
-    document.querySelector('.arrow4').style.top = '372px';
-    document.querySelector('.arrow4').style.marginLeft = '121px';
+    document.querySelector('.arrow4').style.top = '367px';
+    document.querySelector('.arrow4').style.marginLeft = '119px';
     document.querySelector('.arrow4').style.width = '95px';
-    document.querySelector('.line4').style.width = '57px';
-    document.querySelector('.point4').style.marginRight = '164px';
-    document.querySelector('.arrow4').style.transform = 'rotate(32deg)';
+    document.querySelector('.line4').style.width = '67px';
+    document.querySelector('.point4').style.marginRight = '157px';
+    document.querySelector('.arrow4').style.transform = 'rotate(30deg)';
     document.querySelector('.line5').style.marginLeft = '-288px';
     document.querySelector('.line5').style.marginTop = '0px';
     document.querySelector('.line5').style.width = '119px';
@@ -2702,7 +2708,7 @@ function mass2() {
     document.querySelector('.line6').style.marginTop = '36px';
     document.querySelector('.line6').style.width = '69px';
     document.querySelector('.arrow6').style.transform = 'rotate(31deg)';
-    document.querySelector('.arrow7').style.transform = 'rotate(-59deg)';
+    document.querySelector('.arrow7').style.transform = 'rotate(-60deg)';
     document.querySelector('.arrow7').style.top = '103px';
     document.querySelector('.line7').style.marginLeft = '-421px';
     document.querySelector('.line7').style.width = '106px';
@@ -2714,7 +2720,7 @@ function mass2() {
         document.querySelector('.arrow7').style.top = '103px';
         document.querySelector('.line7').style.marginLeft = '-421px';
         document.querySelector('.line7').style.width = '106px';
-        document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector('.arrow7').style.marginLeft = '49px';
         document.querySelector('.arrow7').style.left = '53%';
       } else {
         // Safari
@@ -2734,23 +2740,24 @@ function mass2() {
       document.querySelector(".arrow3").style.display = "none";
     }
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "410px";
+      document.querySelector(".arrow3").style.top = "407px";
       document.querySelector(".arrow3").style.left = "40.2%";
       document.querySelector(".line3").style.width = "109px";
+      document.querySelector(".line3").style.marginLeft = "-130px";
       document.querySelector(".point3").style.marginRight = "131px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-19px";
-      document.querySelector(".arrow3").style.transform = "rotate(482deg)";
-      document.querySelector(".arrow3").style.marginLeft = "14px";
+      document.querySelector(".arrow3").style.transform = "rotate(480deg)";
+      document.querySelector(".arrow3").style.marginLeft = "19px";
     }
 
     if (sufId == "surf_2") {
       document.querySelector(".line3").style.width = "85px";
       document.querySelector(".line3").style.marginLeft = "-130px";
       document.querySelector(".point3").style.marginRight = "150px";
-      document.querySelector(".arrow3").style.transform = "rotate(482deg)";
-      document.querySelector(".arrow3").style.marginLeft = "16px";
-      document.querySelector(".arrow3").style.top = "403px";
+      document.querySelector(".arrow3").style.transform = "rotate(480deg)";
+      document.querySelector(".arrow3").style.marginLeft = "19px";
+      document.querySelector(".arrow3").style.top = "407px";
       document.querySelector(".arrow3 span").style.transform = "rotate(230deg)";
       document.querySelector(".arrow3 span").style.left = "-37px";
       document.querySelector(".arrow3").style.left = "40.2%";
@@ -2758,6 +2765,7 @@ function mass2() {
     if (sufId == "surf_3") {
       document.querySelector(".line3").style.width = "71px";
       document.querySelector(".point3").style.marginRight = "165px";
+      document.querySelector(".line3").style.marginLeft = "-139px";
       document.querySelector(".arrow3").style.transform = "rotate(481deg)";
       document.querySelector(".arrow3").style.marginLeft = "1px";
       document.querySelector(".arrow3").style.left = "42.2%";
@@ -4360,16 +4368,7 @@ $('#inc-slider').focus((event)=>{
 
 $(window).blur(function() {
   $('#inc-slider').addClass('blur');
-  $('#inc-slider').removeClass('focusRemove');
-  $('#inc-slider').removeClass('focusAdd');
-  // if($('#mass-slider').focus){
-  //   console.log('mass slider focus')
-      $('#mass-slider').addClass('blur');
-  $('#mass-slider').removeClass('focusRemove');
-  $('#mass-slider').removeClass('focusAdd');
-  // }
-
-  
+  $('#mass-slider').addClass('blur');
 });
 
 $('#inc-slider').focusout((event)=>{
