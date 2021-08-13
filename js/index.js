@@ -247,6 +247,7 @@ function selectSlider() {
     document.getElementById("axis3").style.display = "block";
     document.getElementById("axis4").style.display = "block";
     document.getElementById("axis5").style.display = "block";
+    document.getElementById("axis6").style.display = "block";
   }
   else {
     document.getElementById("axis3").style.display = "none";
@@ -496,7 +497,7 @@ function mass1() {
     document.querySelector(".point1").style.marginRight = "165px";
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(88deg)";
-    document.querySelector(".frac-line").style.width = "63px";
+    // document.querySelector(".frac-line").style.width = "63px";
     document.querySelector(".frac-point").style.marginRight = "166px";
     document.querySelector(".frac-arrow span").style.left = "-96px";
     document.querySelector(".arrow2").style.left = "328px";
@@ -510,7 +511,12 @@ function mass1() {
     document.getElementById("axis6").style.display = "none";
   }
   else if (mass == 1 && angle == 5) {
+
     if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
       document.getElementById("axis3").style.display = "block";
       document.getElementById("axis4").style.display = "block";
       document.getElementById("axis5").style.display = "block";
@@ -519,7 +525,12 @@ function mass1() {
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".frac-line").style.display = "block";
     document.querySelector(".frac-point").style.display = "block";
-    // document.querySelector(".frac-arrow span").style.display = "block";
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.querySelector(".line1").style.width = "65px";
     document.querySelector(".point1").style.marginRight = "165px";
     document.querySelector(".arrow1 span").style.left = "-48px";
@@ -585,6 +596,10 @@ function mass1() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -602,11 +617,29 @@ function mass1() {
 
   }
   else if (mass == 1 && angle == 10) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "65px";
     document.querySelector(".point1").style.marginRight = "165px";
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-line").style.width = "21px";
     document.querySelector(".frac-point").style.marginRight = "211px";
     document.querySelector(".frac-arrow span").style.left = "-94px";
@@ -668,6 +701,10 @@ function mass1() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -684,6 +721,22 @@ function mass1() {
     }
   }
   else if (mass == 1 && angle == 15) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector('.arrow1').style.marginLeft = '-52px';
     document.querySelector(".line1").style.width = "65px";
@@ -691,6 +744,8 @@ function mass1() {
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
     document.querySelector(".frac-line").style.width = "24px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "206px";
     document.querySelector(".frac-arrow span").style.left = "-93px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(15deg)";
@@ -738,6 +793,7 @@ function mass1() {
         document.querySelector('.line7').style.width = '18px';
         document.querySelector('.point7').style.marginRight = '196px';
         document.querySelector('.arrow7').style.marginLeft = '55px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '300px';
         document.querySelector('.arrow7').style.marginLeft = '75px';
@@ -750,6 +806,10 @@ function mass1() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -757,6 +817,7 @@ function mass1() {
       document.querySelector(".arrow3").style.left = "40.2%";
       document.querySelector(".arrow3").style.top = "355px";
       document.querySelector(".line3").style.width = "20px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
       document.querySelector(".point3").style.marginRight = "221px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-99px";
@@ -766,6 +827,22 @@ function mass1() {
 
   }
   else if (mass == 1 && angle == 20) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector('.arrow1').style.marginLeft = '-52px';
     document.querySelector(".line1").style.width = "65px";
@@ -773,6 +850,8 @@ function mass1() {
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
     document.querySelector(".frac-line").style.width = "29px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "201px";
     document.querySelector(".frac-arrow span").style.left = "-92px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(20deg)";
@@ -820,6 +899,7 @@ function mass1() {
         document.querySelector('.line7').style.width = '21px';
         document.querySelector('.point7').style.marginRight = '183px';
         document.querySelector('.arrow7').style.marginLeft = '54px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '300px';
         document.querySelector('.arrow7').style.marginLeft = '75px';
@@ -832,6 +912,10 @@ function mass1() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -844,9 +928,26 @@ function mass1() {
       document.querySelector(".arrow3 span").style.left = "-92px";
       document.querySelector(".arrow3").style.transform = "rotate(520deg)";
       document.querySelector(".arrow3").style.marginLeft = "-57px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
   }
   else if (mass == 1 && angle == 25) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector('.arrow1').style.marginLeft = '-52px';
     document.querySelector(".line1").style.width = "65px";
@@ -854,6 +955,8 @@ function mass1() {
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
     document.querySelector(".frac-line").style.width = "29px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "201px";
     document.querySelector(".frac-arrow span").style.left = "-91px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(25deg)";
@@ -899,6 +1002,7 @@ function mass1() {
         document.querySelector('.arrow7').style.marginLeft = '58px';
         document.querySelector('.line7').style.width = '28px';
         document.querySelector('.point7').style.marginRight = '196px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '297px';
         document.querySelector('.arrow7').style.marginLeft = '75px';
@@ -910,6 +1014,10 @@ function mass1() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -927,12 +1035,30 @@ function mass1() {
 
   }
   else if (mass == 1 && angle == 30) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "60px";
     document.querySelector(".point1").style.marginRight = "168px";
     document.querySelector(".arrow1 span").style.left = "-58px";
     document.querySelector(".arrow1 span").style.transform = "rotate(120deg)";
     document.querySelector(".frac-line").style.width = "25px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "203px";
     document.querySelector(".frac-arrow span").style.left = "-90px";
     document.querySelector(".frac-arrow span").style.transform =
@@ -978,6 +1104,7 @@ function mass1() {
         document.querySelector('.line7').style.width = '35px';
         document.querySelector('.point7').style.marginRight = '198px';
         document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         // Safari
         document.querySelector('.arrow7').style.top = '292px';
@@ -988,6 +1115,7 @@ function mass1() {
     }
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -1005,6 +1133,7 @@ function mass1() {
       document.querySelector(".point3").style.borderLeft = "14px solid black";
       document.querySelector(".arrow3 span").style.transform = "rotate(224deg)";
       document.querySelector(".arrow3 span").style.left = "-89px";
+      
     }
 
     if (sufId == "surf_2") {
@@ -1028,12 +1157,30 @@ function mass1() {
 
   }
   else if (mass == 1 && angle == 35) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "55px";
     document.querySelector(".point1").style.marginRight = "177px";
     document.querySelector(".arrow1 span").style.left = "-58px";
     document.querySelector(".arrow1 span").style.transform = "rotate(125deg)";
     document.querySelector(".frac-line").style.width = "49px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "191px";
     document.querySelector(".frac-arrow span").style.left = "-81px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(35deg)";
@@ -1079,6 +1226,7 @@ function mass1() {
         document.querySelector('.point7').style.marginRight = '205px';
         document.querySelector('.arrow7').style.left = '52%';
         document.querySelector('.arrow7').style.marginLeft = '47px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '290px';
         document.querySelector('.arrow7').style.marginLeft = '77px';
@@ -1107,6 +1255,7 @@ function mass1() {
       document.querySelector(".arrow3 span").style.left = "-83px";
       document.querySelector(".arrow3").style.transform = "rotate(506deg)";
       document.querySelector(".arrow3").style.marginLeft = "-35px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
     if (sufId == "surf_2") {
@@ -1130,12 +1279,30 @@ function mass1() {
 
   }
   else if (mass == 1 && angle == 40) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "50px";
     document.querySelector(".point1").style.marginRight = "180px";
     document.querySelector(".arrow1 span").style.left = "-63px";
     document.querySelector(".arrow1 span").style.transform = "rotate(130deg)";
     document.querySelector(".frac-line").style.width = "49px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "191px";
     document.querySelector(".frac-arrow span").style.left = "-81px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(40deg)";
@@ -1182,6 +1349,7 @@ function mass1() {
         document.querySelector('.point7').style.marginRight = '225px';
         document.querySelector('.arrow7').style.left = '53%';
         document.querySelector('.arrow7').style.marginLeft = '44px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '294px';
         document.querySelector('.arrow7').style.marginLeft = '66px';
@@ -1191,26 +1359,36 @@ function mass1() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      document.querySelector(".line3").style.display = "none";
+      document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
-      document.querySelector(".arrow3").style.top = "392px";
-      document.querySelector(".arrow3").style.left = "41.2%";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.querySelector(".arrow3").style.top = "393px";
+      document.querySelector(".arrow3").style.left = "40.2%";
       document.querySelector(".line3").style.width = "50px";
       document.querySelector(".point3").style.marginRight = "191px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-77px";
-      document.querySelector(".arrow3").style.transform = "rotate(501deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-32px";
+      document.querySelector(".arrow3").style.transform = "rotate(500deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-24px";
       document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "18px";
       document.querySelector(".point3").style.marginRight = "219px";
       document.querySelector(".arrow3").style.transform = "rotate(505deg)";
@@ -1236,16 +1414,35 @@ function mass1() {
       document.querySelector(".point3").style.borderLeft = "14px solid black";
       document.querySelector(".arrow3").style.transform = "rotate(503deg)";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 1 && angle == 45) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.getElementById("axis3").style.display = "block";
+      document.getElementById("axis4").style.display = "block";
+      document.getElementById("axis5").style.display = "block";
+      document.getElementById("axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "45px";
     document.querySelector(".point1").style.marginRight = "183px";
     document.querySelector(".arrow1 span").style.left = "-68px";
     document.querySelector(".arrow1 span").style.transform = "rotate(135deg)";
     document.querySelector(".frac-line").style.width = "35px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "194px";
     document.querySelector(".frac-arrow span").style.left = "-81px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(45deg)";
@@ -1291,6 +1488,7 @@ function mass1() {
         document.querySelector('.point7').style.marginRight = '237px';
         document.querySelector('.arrow7').style.left = '53%';
         document.querySelector('.arrow7').style.marginLeft = '41px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '292px';
         document.querySelector('.arrow7').style.marginLeft = '66px';
@@ -1300,14 +1498,21 @@ function mass1() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      document.querySelector(".line3").style.display = "none";
+      document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "400px";
       document.querySelector(".line3").style.width = "54px";
       document.querySelector(".point3").style.marginRight = "185px";
@@ -1316,10 +1521,14 @@ function mass1() {
       document.querySelector(".arrow3").style.transform = "rotate(495deg)";
       document.querySelector(".arrow3").style.marginLeft = "-16px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "29px";
       document.querySelector(".point3").style.marginRight = "208px";
       document.querySelector(".arrow3").style.transform = "rotate(497deg)";
@@ -1337,19 +1546,29 @@ function mass1() {
       document.querySelector(".point3").style.marginRight = "231px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-116px";
-      document.querySelector(".arrow3").style.top = "398px";
-      document.querySelector(".arrow3").style.marginLeft = "-19px";
+      document.querySelector(".arrow3").style.top = "386px";
+      document.querySelector(".arrow3").style.transform = "rotate(503deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-27px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 1 && angle == 50) {
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "40px";
     document.querySelector(".point1").style.marginRight = "188px";
     document.querySelector(".arrow1 span").style.left = "-73px";
     document.querySelector(".arrow1 span").style.transform = "rotate(140deg)";
     document.querySelector(".frac-line").style.width = "40px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "195px";
     document.querySelector(".frac-arrow span").style.left = "-85px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(50deg)";
@@ -1397,6 +1616,7 @@ function mass1() {
         document.querySelector('.point7').style.marginRight = '258px';
         document.querySelector('.arrow7').style.left = '53%';
         document.querySelector('.arrow7').style.marginLeft = '45px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '292px';
         document.querySelector('.arrow7').style.marginLeft = '62px';
@@ -1406,14 +1626,21 @@ function mass1() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      document.querySelector(".line3").style.display = "none";
+      document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "54px";
       document.querySelector(".point3").style.marginRight = "183px";
       document.querySelector(".arrow3").style.transform = "rotate(490deg)";
@@ -1422,11 +1649,16 @@ function mass1() {
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-63px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "29px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "208px";
       document.querySelector(".arrow3").style.transform = "rotate(491deg)";
       document.querySelector(".arrow3").style.marginLeft = "-5px";
@@ -1436,24 +1668,37 @@ function mass1() {
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "18px";
+      document.querySelector(".line3").style.marginLeft = "-139px";
       document.querySelector(".point3").style.marginRight = "219px";
-      document.querySelector(".arrow3").style.transform = "rotate(494deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-12px";
-      document.querySelector(".arrow3").style.top = "399px";
+      document.querySelector(".arrow3").style.transform = "rotate(490deg)";
+      document.querySelector(".arrow3").style.marginLeft = "-6px";
+      document.querySelector(".arrow3").style.top = "405px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-104px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 1 && angle == 55) {
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "35px";
     document.querySelector(".point1").style.marginRight = "193px";
     document.querySelector(".arrow1 span").style.left = "-78px";
     document.querySelector(".arrow1 span").style.transform = "rotate(145deg)";
     document.querySelector(".frac-line").style.width = "21px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "221px";
     document.querySelector(".frac-arrow span").style.left = "-95px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(55deg)";
@@ -1501,6 +1746,7 @@ function mass1() {
         document.querySelector('.point7').style.marginRight = '287px';
         document.querySelector('.arrow7').style.left = '53%';
         document.querySelector('.arrow7').style.marginLeft = '53px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '299px';
         document.querySelector('.arrow7').style.marginLeft = '65px';
@@ -1510,24 +1756,37 @@ function mass1() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      document.querySelector(".line3").style.display = "none";
+      document.querySelector(".point3").style.display = "none";
     }
+
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "407px";
       document.querySelector(".line3").style.width = "52px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "178px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-61px";
       document.querySelector(".arrow3").style.transform = "rotate(486deg)";
       document.querySelector(".arrow3").style.marginLeft = "5px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "30px";
       document.querySelector(".point3").style.marginRight = "207px";
       document.querySelector(".arrow3").style.transform = "rotate(486deg)";
@@ -1538,8 +1797,11 @@ function mass1() {
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
-
-      document.querySelector(".line3").style.width = "19px";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.querySelector(".line3").style.marginLeft = "-139px";
+      document.querySelector(".line3").style.width = "22px";
       document.querySelector(".point3").style.marginRight = "213px";
       document.querySelector(".arrow3").style.transform = "rotate(486deg)";
       document.querySelector(".arrow3").style.marginLeft = "3px";
@@ -1547,16 +1809,25 @@ function mass1() {
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-103px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 1 && angle == 60) {
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-1.png';
     document.querySelector(".line1").style.width = "32px";
     document.querySelector(".point1").style.marginRight = "203px";
     document.querySelector(".arrow1 span").style.left = "-82px";
     document.querySelector(".arrow1 span").style.transform = "rotate(150deg)";
     document.querySelector(".frac-line").style.width = "20px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "217px";
     document.querySelector(".frac-arrow span").style.left = "-100px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(60deg)";
@@ -1604,6 +1875,7 @@ function mass1() {
         document.querySelector('.line7').style.marginLeft = '-359px';
         document.querySelector('.line7').style.width = '62px';
         document.querySelector('.point7').style.marginRight = '309px';
+        document.querySelector(".point7").style.borderLeft = "14px solid #2cca2c";
       } else {
         document.querySelector('.arrow7').style.top = '298px';
         document.querySelector('.arrow7').style.marginLeft = '65px';
@@ -1615,13 +1887,21 @@ function mass1() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      document.querySelector(".line3").style.display = "none";
+      document.querySelector(".point3").style.display = "none";
     }
+
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "411px";
       document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".line3").style.width = "56px";
@@ -1631,9 +1911,13 @@ function mass1() {
       document.querySelector(".arrow3").style.transform = "rotate(481deg)";
       document.querySelector(".arrow3").style.marginLeft = "13px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "41px";
       document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "198px";
@@ -1645,6 +1929,9 @@ function mass1() {
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "29px";
       document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "208px";
@@ -1654,6 +1941,7 @@ function mass1() {
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-96px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
   }
 }
@@ -1695,7 +1983,12 @@ function mass2() {
     document.querySelector(".arrow7").style.display = "block";
     document.querySelector(".frac-line").style.display = "block";
     document.querySelector(".frac-point").style.display = "block";
-    document.querySelector(".frac-arrow span").style.display = "block";
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.querySelector(".arrow4 span").style.left = "-88px";
     document.querySelector(".arrow4 span").style.top = "18px";
     document.querySelector(".line1").style.width = "129px";
@@ -1760,6 +2053,10 @@ function mass2() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -1771,16 +2068,32 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-112px";
       document.querySelector(".arrow3").style.transform = "rotate(531deg)";
       document.querySelector(".arrow3").style.marginLeft = "-74px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
   }
   else if (mass == 2 && angle == 10) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "124px";
     document.querySelector(".point1").style.marginRight = "114px";
     document.querySelector(".arrow1 span").style.left = "2px";
     document.querySelector(".arrow1 span").style.transform = "rotate(100deg)";
     document.querySelector(".frac-line").style.width = "20px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "218px";
     document.querySelector(".frac-arrow span").style.left = "-106px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(10deg)";
@@ -1838,6 +2151,10 @@ function mass2() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -1849,16 +2166,32 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-94px";
       document.querySelector(".arrow3").style.transform = "rotate(526deg)";
       document.querySelector(".arrow3").style.marginLeft = "-65px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
   }
   else if (mass == 2 && angle == 15) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "119px";
     document.querySelector(".point1").style.marginRight = "119px";
     document.querySelector(".arrow1 span").style.left = "-3px";
     document.querySelector(".arrow1 span").style.transform = "rotate(105deg)";
     document.querySelector(".frac-line").style.width = "30px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "208px";
     document.querySelector(".frac-arrow span").style.left = "-98px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(15deg)";
@@ -1919,6 +2252,10 @@ function mass2() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -1930,16 +2267,32 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-85px";
       document.querySelector(".arrow3").style.transform = "rotate(521deg)";
       document.querySelector(".arrow3").style.marginLeft = "-58px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
   }
   else if (mass == 2 && angle == 20) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "114px";
     document.querySelector(".point1").style.marginRight = "124px";
     document.querySelector(".arrow1 span").style.left = "-8px";
     document.querySelector(".arrow1 span").style.transform = "rotate(110deg)";
     document.querySelector(".frac-line").style.width = "40px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "198px";
     document.querySelector(".frac-arrow span").style.left = "-90px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(20deg)";
@@ -1993,6 +2346,10 @@ function mass2() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -2004,16 +2361,33 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-72px";
       document.querySelector(".arrow3").style.transform = "rotate(517deg)";
       document.querySelector(".arrow3").style.marginLeft = "-54px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
+      document.querySelector('.arrow7').style.left = '53%';
     }
 
   }
   else if (mass == 2 && angle == 25) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "109px";
     document.querySelector(".point1").style.marginRight = "129px";
     document.querySelector(".arrow1 span").style.left = "-3px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
     document.querySelector(".frac-line").style.width = "50px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "188px";
     document.querySelector(".frac-arrow span").style.left = "-78px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(25deg)";
@@ -2073,6 +2447,10 @@ function mass2() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block"; 
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
+        document.getElementById("axis2").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
@@ -2084,16 +2462,32 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-63px";
       document.querySelector(".arrow3").style.transform = "rotate(512deg)";
       document.querySelector(".arrow3").style.marginLeft = "-46px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
   }
   else if (mass == 2 && angle == 30) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "104px";
     document.querySelector(".point1").style.marginRight = "134px";
     document.querySelector(".arrow1 span").style.left = "-18px";
     document.querySelector(".arrow1 span").style.transform = "rotate(120deg)";
     document.querySelector(".frac-line").style.width = "60px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "170px";
     document.querySelector(".frac-arrow span").style.left = "-56px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(30deg)";
@@ -2155,7 +2549,8 @@ function mass2() {
       document.querySelector(".arrow3").style.display = "none";
     }
     if (sufId == "surf_1") {
-      if(forceVal>0){
+      if(forceVal>0 || netForce>0){
+        console.log('block axis2')
         document.getElementById("axis2").style.display = "block";
         document.querySelector(".line3").style.display = "block";
         document.querySelector(".point3").style.display = "block";
@@ -2168,10 +2563,11 @@ function mass2() {
       document.querySelector(".arrow3 span").style.left = "-63px";
       document.querySelector(".arrow3").style.transform = "rotate(508deg)";
       document.querySelector(".arrow3").style.marginLeft = "-40px";
+      document.querySelector(".point3").style.borderLeft = "14px solid black";
     }
 
     if (sufId == "surf_2") {
-      if(forceVal>0){
+      if(forceVal>0 || netForce>0){
         document.getElementById("axis2").style.display = "block";
         document.querySelector(".line3").style.display = "block";
         document.querySelector(".point3").style.display = "block";
@@ -2186,22 +2582,39 @@ function mass2() {
       document.querySelector(".arrow3").style.marginLeft = "-36px";
     }
     if (sufId == "surf_3") {
-      if(forceVal<0){
+      if(forceVal<=0 || netForce<=0){
         document.getElementById("axis2").style.display = "none";
         document.querySelector(".line3").style.display = "none";
         document.querySelector(".point3").style.display = "none";
         document.querySelector(".arrow3 span").style.display = "none";
+        
       }
+      // document.querySelector(".arrow3").style.top = "384px";
     }
 
   }
   else if (mass == 2 && angle == 35) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "99px";
     document.querySelector(".point1").style.marginRight = "139px";
     document.querySelector(".arrow1 span").style.left = "-23px";
     document.querySelector(".arrow1 span").style.transform = "rotate(125deg)";
     document.querySelector(".frac-line").style.width = "55px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "175px";
     document.querySelector(".frac-arrow span").style.left = "-55px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(35deg)";
@@ -2255,6 +2668,10 @@ function mass2() {
 
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -2272,6 +2689,9 @@ function mass2() {
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "383px";
       document.querySelector(".arrow3").style.transform = "rotate(507deg)";
       document.querySelector(".arrow3").style.marginLeft = "-36px";
@@ -2282,7 +2702,7 @@ function mass2() {
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
-      if(forceVal<0){
+      if(forceVal<=0 || netForce<=0){
         document.getElementById("axis2").style.display = "none";
         document.querySelector(".line3").style.display = "none";
         document.querySelector(".point3").style.display = "none";
@@ -2291,12 +2711,27 @@ function mass2() {
     }
   }
   else if (mass == 2 && angle == 40) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "94px";
     document.querySelector(".point1").style.marginRight = "144px";
     document.querySelector(".arrow1 span").style.left = "-28px";
     document.querySelector(".arrow1 span").style.transform = "rotate(130deg)";
     document.querySelector(".frac-line").style.width = "50px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "180px";
     document.querySelector(".frac-arrow span").style.left = "-60px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(40deg)";
@@ -2307,19 +2742,19 @@ function mass2() {
     document.getElementById("arcs").style.marginTop = "287px";
     document.getElementById("arcs").style.marginLeft = "3px";
     document.querySelector('.arrow4').style.left = '357px';
-    document.querySelector('.arrow4').style.top = '429px';
+    document.querySelector('.arrow4').style.top = '427px';
     document.querySelector(".arrow4 span").style.left = "-97px";
-    document.querySelector('.arrow4').style.marginLeft = '57px';
+    document.querySelector('.arrow4').style.marginLeft = '59px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '102px';
-    document.querySelector('.point4').style.marginRight = '125px';
-    document.querySelector('.arrow4').style.transform = 'rotate(51deg)';
+    document.querySelector('.point4').style.marginRight = '122px';
+    document.querySelector('.arrow4').style.transform = 'rotate(50deg)';
     document.querySelector('.line5').style.marginLeft = '-201px';
     document.querySelector('.line5').style.marginTop = '16px';
     document.querySelector('.line5').style.width = '88px';
     document.querySelector('.arrow5').style.top = '342px';
     document.querySelector('.arrow5').style.transform = 'rotate(-40deg)';
-    document.querySelector('.line6').style.marginLeft = '-159px';
+    document.querySelector('.line6').style.marginLeft = '-158px';
     document.querySelector('.line6').style.marginTop = '94px';
     document.querySelector('.line6').style.width = '111px';
     document.querySelector('.arrow6').style.transform = 'rotate(51deg)';
@@ -2333,8 +2768,8 @@ function mass2() {
     if (ua.indexOf('safari') != -1) {
       if (ua.indexOf('chrome') > -1) {
         document.querySelector('.arrow7').style.top = '208px';
-        document.querySelector('.line7').style.marginLeft = '-248px';
-        document.querySelector('.line7').style.width = '73px';
+        document.querySelector('.line7').style.marginLeft = '-259px';
+        document.querySelector('.line7').style.width = '84px';
         document.querySelector('.point7').style.marginRight = '263px';
         document.querySelector('.arrow7').style.marginLeft = '50px';
       } else {
@@ -2349,12 +2784,16 @@ function mass2() {
     }
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "388px";
       document.querySelector(".arrow3").style.left = "40.2%";
       document.querySelector(".line3").style.width = "75px";
@@ -2366,6 +2805,9 @@ function mass2() {
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "389px";
       document.querySelector(".line3").style.width = "25px";
       document.querySelector(".point3").style.marginRight = "205px";
@@ -2376,7 +2818,7 @@ function mass2() {
       document.querySelector(".arrow3").style.left = "40.2%";
     }
     if (sufId == "surf_3") {
-      if(forceVal>0){
+      if(forceVal>0 || netForce>0){
         document.getElementById("axis2").style.display = "block";
         document.querySelector(".line3").style.display = "block";
         document.querySelector(".point3").style.display = "block";
@@ -2394,12 +2836,27 @@ function mass2() {
 
   }
   else if (mass == 2 && angle == 45) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "89px";
     document.querySelector(".point1").style.marginRight = "149px";
     document.querySelector(".arrow1 span").style.left = "-33px";
     document.querySelector(".arrow1 span").style.transform = "rotate(135deg)";
     document.querySelector(".frac-line").style.width = "45px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "185px";
     document.querySelector(".frac-arrow span").style.left = "-65px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(45deg)";
@@ -2458,6 +2915,10 @@ function mass2() {
 
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -2498,12 +2959,27 @@ function mass2() {
 
   }
   else if (mass == 2 && angle == 50) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "84px";
     document.querySelector(".point1").style.marginRight = "154px";
     document.querySelector(".arrow1 span").style.left = "-38px";
     document.querySelector(".arrow1 span").style.transform = "rotate(140deg)";
     document.querySelector(".frac-line").style.width = "40px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "190px";
     document.querySelector(".frac-arrow span").style.left = "-70px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(50deg)";
@@ -2559,6 +3035,10 @@ function mass2() {
     }
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -2600,12 +3080,27 @@ function mass2() {
 
   }
   else if (mass == 2 && angle == 55) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "79px";
     document.querySelector(".point1").style.marginRight = "159px";
     document.querySelector(".arrow1 span").style.left = "-43px";
     document.querySelector(".arrow1 span").style.transform = "rotate(145deg)";
     document.querySelector(".frac-line").style.width = "35px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "195px";
     document.querySelector(".frac-arrow span").style.left = "-80px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(55deg)";
@@ -2659,6 +3154,10 @@ function mass2() {
     }
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -2700,12 +3199,27 @@ function mass2() {
 
   }
   else if (mass == 2 && angle == 60) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-2.png';
     document.querySelector(".line1").style.width = "74px";
     document.querySelector(".point1").style.marginRight = "164px";
     document.querySelector(".arrow1 span").style.left = "-48px";
     document.querySelector(".arrow1 span").style.transform = "rotate(150deg)";
     document.querySelector(".frac-line").style.width = "30px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "200px";
     document.querySelector(".frac-arrow span").style.left = "-85px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(60deg)";
@@ -2760,6 +3274,10 @@ function mass2() {
     }
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -2839,8 +3357,13 @@ function mass3() {
 
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".frac-line").style.display = "block";
-    document.querySelector(".frac-point").style.display = "block";
-    document.querySelector(".frac-arrow span").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";    
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.querySelector(".line1").style.width = "190px";
     document.querySelector(".point1").style.marginRight = "40px";
     document.querySelector(".arrow1 span").style.left = "72px";
@@ -2912,9 +3435,14 @@ function mass3() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block";
+        document.querySelector("#axis2").style.display = "block";
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
+        document.querySelector("#axis2").style.display = "none";
       }
       document.querySelector(".arrow3").style.top = "341px";
       document.querySelector(".line3").style.width = "8px";
@@ -2926,12 +3454,28 @@ function mass3() {
     }
   }
   else if (mass == 3 && angle == 10) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+      
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "185px";
     document.querySelector(".point1").style.marginRight = "45px";
     document.querySelector(".arrow1 span").style.left = "67px";
     document.querySelector(".arrow1 span").style.transform = "rotate(105deg)";
     document.querySelector(".frac-line").style.width = "39px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "189px";
     document.querySelector(".frac-arrow span").style.left = "-77px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(10deg)";
@@ -2997,9 +3541,14 @@ function mass3() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block";
+        document.querySelector("#axis2").style.display = "block";
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
+        document.querySelector("#axis2").style.display = "none";
       }
       document.querySelector(".arrow3").style.top = "342px";
       document.querySelector(".line3").style.width = "25px";
@@ -3008,15 +3557,33 @@ function mass3() {
       document.querySelector(".arrow3 span").style.left = "-80px";
       document.querySelector(".arrow3").style.transform = "rotate(170deg)";
       document.querySelector(".arrow3").style.marginLeft = "-68px";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
     }
   }
   else if (mass == 3 && angle == 15) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "180px";
     document.querySelector(".point1").style.marginRight = "50px";
     document.querySelector(".arrow1 span").style.left = "62px";
     document.querySelector(".arrow1 span").style.transform = "rotate(110deg)";
     document.querySelector(".frac-line").style.width = "52px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "176px";
     document.querySelector(".frac-arrow span").style.left = "-61px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(15deg)";
@@ -3084,9 +3651,14 @@ function mass3() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block";
+        document.querySelector("#axis2").style.display = "block";
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
+        document.querySelector("#axis2").style.display = "none";
       }
       document.querySelector(".arrow3").style.top = "356px";
       document.querySelector(".line3").style.width = "39px";
@@ -3095,15 +3667,33 @@ function mass3() {
       document.querySelector(".arrow3 span").style.left = "-70px";
       document.querySelector(".arrow3").style.transform = "rotate(524deg)";
       document.querySelector(".arrow3").style.marginLeft = "-61px";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
     }
   }
   else if (mass == 3 && angle == 20) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "175px";
     document.querySelector(".point1").style.marginRight = "55px";
     document.querySelector(".arrow1 span").style.left = "57px";
     document.querySelector(".arrow1 span").style.transform = "rotate(115deg)";
     document.querySelector(".frac-line").style.width = "81px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "152px";
     document.querySelector(".frac-arrow span").style.left = "-37px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(20deg)";
@@ -3169,9 +3759,14 @@ function mass3() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block";
+        document.querySelector("#axis2").style.display = "block";
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
+        document.querySelector("#axis2").style.display = "none";
       }
       document.querySelector(".arrow3").style.top = "366px";
       document.querySelector(".line3").style.width = "61px";
@@ -3180,16 +3775,34 @@ function mass3() {
       document.querySelector(".arrow3 span").style.left = "-60px";
       document.querySelector(".arrow3").style.transform = "rotate(518deg)";
       document.querySelector(".arrow3").style.marginLeft = "-55px";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
     }
 
   }
   else if (mass == 3 && angle == 25) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "170px";
     document.querySelector(".point1").style.marginRight = "60px";
     document.querySelector(".arrow1 span").style.left = "54px";
     document.querySelector(".arrow1 span").style.transform = "rotate(120deg)";
     document.querySelector(".frac-line").style.width = "108px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "120px";
     document.querySelector(".frac-arrow span").style.left = "-5px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(25deg)";
@@ -3252,9 +3865,14 @@ function mass3() {
     if (sufId == "surf_1") {
       if(chechboxCheckedForce){
         document.querySelector(".arrow3").style.display = "block";
+        document.querySelector("#axis2").style.display = "block";
+        document.querySelector(".line3").style.display = "block";
+        document.querySelector(".point3").style.display = "block";
+        document.querySelector(".arrow3 span").style.display = "block";
       }
       else{
         document.querySelector(".arrow3").style.display = "none";
+        document.querySelector("#axis2").style.display = "none";
       }
       document.querySelector(".arrow3").style.top = "371px";
       document.querySelector(".line3").style.width = "73px";
@@ -3263,16 +3881,34 @@ function mass3() {
       document.querySelector(".arrow3 span").style.left = "-50px";
       document.querySelector(".arrow3").style.transform = "rotate(515deg)";
       document.querySelector(".arrow3").style.marginLeft = "-49px";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
     }
 
   }
   else if (mass == 3 && angle == 30) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "170px";
     document.querySelector(".point1").style.marginRight = "60px";
     document.querySelector(".arrow1 span").style.left = "52px";
     document.querySelector(".arrow1 span").style.transform = "rotate(120deg)";
     document.querySelector(".frac-line").style.width = "108px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "120px";
     document.querySelector(".frac-arrow span").style.left = "-5px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(30deg)";
@@ -3285,6 +3921,7 @@ function mass3() {
 
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -3338,6 +3975,9 @@ function mass3() {
     }
 
     if (sufId == "surf_1") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".arrow3").style.top = "379px";
       document.querySelector(".line3").style.width = "88px";
       document.querySelector(".point3").style.marginRight = "144px";
@@ -3351,6 +3991,9 @@ function mass3() {
     }
 
     if (sufId == "surf_2") {
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
       document.querySelector(".line3").style.width = "12px";
       document.querySelector(".point3").style.marginRight = "226px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
@@ -3370,12 +4013,27 @@ function mass3() {
     }
   }
   else if (mass == 3 && angle == 35) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "165px";
     document.querySelector(".point1").style.marginRight = "65px";
     document.querySelector(".arrow1 span").style.left = "50px";
     document.querySelector(".arrow1 span").style.transform = "rotate(125deg)";
     document.querySelector(".frac-line").style.width = "98px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "130px";
     document.querySelector(".frac-arrow span").style.left = "-13px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(35deg)";
@@ -3391,7 +4049,7 @@ function mass3() {
     document.querySelector(".point2").style.marginRight = "44px";
     document.querySelector(".arrow2 span").style.left = "68px";
     document.querySelector('.arrow4').style.top = '440px';
-    document.querySelector('.arrow4').style.marginLeft = '62px';
+    document.querySelector('.arrow4').style.marginLeft = '63px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '160px';
     document.querySelector('.point4').style.marginRight = '63px';
@@ -3428,6 +4086,7 @@ function mass3() {
 
     if (document.getElementById("showForce").checked == true) {
       document.querySelector(".arrow3").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
@@ -3466,12 +4125,27 @@ function mass3() {
 
   }
   else if (mass == 3 && angle == 40) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "150px";
     document.querySelector(".point1").style.marginRight = "80px";
     document.querySelector(".arrow1 span").style.left = "33px";
     document.querySelector(".arrow1 span").style.transform = "rotate(130deg)";
     document.querySelector(".frac-line").style.width = "88px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "140px";
     document.querySelector(".frac-arrow span").style.left = "-21px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(40deg)";
@@ -3487,7 +4161,7 @@ function mass3() {
     document.getElementById("arcs").style.marginLeft = "-1px";
     document.getElementById("arcs").style.marginTop = "285px";
     document.querySelector('.arrow4').style.top = '422px';
-    document.querySelector('.arrow4').style.marginLeft = '74px';
+    document.querySelector('.arrow4').style.marginLeft = '75px';
     document.querySelector('.arrow4').style.width = '80px';
     document.querySelector('.line4').style.width = '152px';
     document.querySelector('.point4').style.marginRight = '58px';
@@ -3527,11 +4201,18 @@ function mass3() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      // document.querySelector(".line3").style.display = "none";
+      // document.querySelector(".point3").style.display = "none";
+      // document.querySelector(".arrow3 span").style.display = "none";
     }
     if (sufId == "surf_1") {
       document.querySelector(".arrow3").style.top = "392px";
@@ -3560,20 +4241,36 @@ function mass3() {
       document.querySelector(".point3").style.marginRight = "226px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-116px";
-      document.querySelector(".arrow3").style.top = "394px";
+      document.querySelector(".arrow3").style.top = "392px";
       document.querySelector(".arrow3").style.transform = "rotate(500deg)";
-      document.querySelector(".arrow3").style.marginLeft = "-25px";
+      document.querySelector(".arrow3").style.marginLeft = "-24px";
       document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 3 && angle == 45) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "145px";
     document.querySelector(".point1").style.marginRight = "84px";
     document.querySelector(".arrow1 span").style.left = "29px";
     document.querySelector(".arrow1 span").style.transform = "rotate(135deg)";
     document.querySelector(".frac-line").style.width = "78px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "150px";
     document.querySelector(".frac-arrow span").style.left = "-29px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(45deg)";
@@ -3591,7 +4288,7 @@ function mass3() {
     document.querySelector(".point2").style.marginRight = "20px";
     document.querySelector(".arrow2 span").style.left = "92px";
     document.querySelector('.arrow4').style.top = '415px';
-    document.querySelector('.arrow4').style.marginLeft = '90px';
+    document.querySelector('.arrow4').style.marginLeft = '91px';
     document.querySelector('.arrow4').style.width = '96px';
     document.querySelector('.line4').style.width = '140px';
     document.querySelector('.point4').style.marginRight = '77px';
@@ -3633,11 +4330,17 @@ function mass3() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      // document.querySelector(".line3").style.display = "none";
+      // document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
@@ -3667,17 +4370,33 @@ function mass3() {
       document.querySelector(".arrow3").style.top = "401px";
       document.querySelector(".arrow3 span").style.transform = "rotate(201deg)";
       document.querySelector(".arrow3 span").style.left = "-96px";
-      document.querySelector(".arrow3").style.left = "40.2%";
+      document.querySelector(".arrow3").style.left = "40.2%"; 
+      document.querySelector("#axis2").style.display = "block";
     }
 
   }
   else if (mass == 3 && angle == 50) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "145px";
     document.querySelector(".point1").style.marginRight = "84px";
     document.querySelector(".arrow1 span").style.left = "29px";
     document.querySelector(".arrow1 span").style.transform = "rotate(140deg)";
     document.querySelector(".frac-line").style.width = "68px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "160px";
     document.querySelector(".frac-arrow span").style.left = "-37px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(50deg)";
@@ -3737,11 +4456,17 @@ function mass3() {
         document.querySelector('.arrow4').style.marginLeft = '100px';
       }
     }
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      // document.querySelector(".line3").style.display = "none";
+      // document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
@@ -3765,6 +4490,7 @@ function mass3() {
     }
     if (sufId == "surf_3") {
       document.querySelector(".line3").style.width = "46px";
+      document.querySelector(".line3").style.marginLeft = "-135px";
       document.querySelector(".point3").style.marginRight = "183px";
       document.querySelector(".arrow3").style.transform = "rotate(491deg)";
       document.querySelector(".arrow3").style.marginLeft = "-6px";
@@ -3776,12 +4502,27 @@ function mass3() {
 
   }
   else if (mass == 3 && angle == 55) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "145px";
     document.querySelector(".point1").style.marginRight = "84px";
     document.querySelector(".arrow1 span").style.left = "29px";
     document.querySelector(".arrow1 span").style.transform = "rotate(150deg)";
     document.querySelector(".frac-line").style.width = "58px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "170px";
     document.querySelector(".frac-arrow span").style.left = "-45px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(55deg)";
@@ -3840,11 +4581,17 @@ function mass3() {
         document.querySelector('.point7').style.marginLeft = '-60px';
       }
     }
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      // document.querySelector(".line3").style.display = "none";
+      // document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
@@ -3880,12 +4627,27 @@ function mass3() {
 
   }
   else if (mass == 3 && angle == 60) {
+    if (chechboxCheckedWeight) {
+      document.querySelector(".arrow4").style.display = "block";
+      document.querySelector(".arrow5").style.display = "block";
+      document.querySelector(".arrow6").style.display = "block";
+      document.querySelector(".arrow7").style.display = "block";
+      document.querySelector("#axis6").style.display = "block";
+    }
+    if(chechboxCheckedForce){
+      document.querySelector(".frac-arrow span").style.display = "none";
+    }
+    else{
+      document.querySelector(".frac-arrow span").style.display = "block";
+    }
     document.getElementById('box').src = './images/Box-3.png';
     document.querySelector(".line1").style.width = "145px";
     document.querySelector(".point1").style.marginRight = "84px";
     document.querySelector(".arrow1 span").style.left = "30px";
     document.querySelector(".arrow1 span").style.transform = "rotate(150deg)";
     document.querySelector(".frac-line").style.width = "65px";
+    document.querySelector(".frac-line").style.display = "block";
+    document.querySelector(".frac-point").style.display = "block";
     document.querySelector(".frac-point").style.marginRight = "172px";
     document.querySelector(".frac-arrow span").style.left = "-53px";
     document.querySelector(".frac-arrow span").style.transform = "rotate(60deg)";
@@ -3945,11 +4707,17 @@ function mass3() {
       }
     }
 
-    if (document.getElementById("showForce").checked == true) {
+    if (document.getElementById("showForce").checked == true && (forceVal>0 || netForce>0)) {
       document.querySelector(".arrow3").style.display = "block";
+      document.querySelector(".line3").style.display = "block";
+      document.querySelector(".point3").style.display = "block";
+      document.querySelector(".arrow3 span").style.display = "block";
+      document.getElementById("axis2").style.display = "block";
     }
     else {
       document.querySelector(".arrow3").style.display = "none";
+      // document.querySelector(".line3").style.display = "none";
+      // document.querySelector(".point3").style.display = "none";
     }
 
     if (sufId == "surf_1") {
@@ -4081,7 +4849,6 @@ function selectCheckBox(e) {
         document.querySelector(".arrow2 span").style.color = "#569654";
         document.querySelector(".frac-line").style.backgroundColor = "#f879f8";
         document.querySelector(".frac-point").style.borderLeft = "14px solid #f879f8";
-        document.querySelector(".frac-arrow span").style.display = "none";
         document.querySelector(".arrow4 span").style.display = "none";
         document.getElementById("arcs").style.display = "none";
         if (sufId == "surf_1" && forceVal>0) {
@@ -4095,7 +4862,9 @@ function selectCheckBox(e) {
           document.getElementById("axis2").style.display = "none";
 
         }
-        if (angle == 30 && angle == 35 && sufId == "surf_3" && forceVal<0) {
+        console.log((angle == 30 || angle == 35))
+        if ((angle == 30 || angle == 35) && sufId == "surf_3" &&  netForce <= 0) {
+          console.log('hello')
           document.getElementById("axis2").style.display = "none";
         }
         else {

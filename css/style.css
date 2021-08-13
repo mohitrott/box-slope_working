@@ -333,7 +333,7 @@ input[type="radio"]:checked {
 .radio-btn{
     position: absolute;
     top: 0px;
-    left: 75px;
+    left: 80px;
 }
 .check-comp{
   position: absolute;
@@ -520,7 +520,7 @@ font-style: italic;
   position: absolute;
   top: 15px;
   left: -56px;
-  transform: rotate(0deg);
+  transform: rotate(30deg);
   font-size: 18px;
   font-weight: bold;
   color: #ff01ff;
